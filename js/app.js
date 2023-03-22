@@ -1,4 +1,4 @@
-let usernames = [`Dale1`, `Dale2`, `Dale3`];
+let users = [`Dale1`, `Dale2`, `Dale3`, `admin`];
 
 
 function generic_greeting() {
@@ -12,3 +12,12 @@ function specific_greeting(usernames) {
 }
 
 specific_greeting(`Dale1`);
+
+function find_admin(users, search_user) {
+    for (let counter = 0; counter < userslength; counter++) {
+        if (users[counter] === `admin`) {
+            return true;
+        }
+    }
+    return false;
+}
